@@ -1,3 +1,3 @@
 # text based Adventure
 
-![Screenshot][screenshot.png]
+![Screenshot](screenshot.png)
