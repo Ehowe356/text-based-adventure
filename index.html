@@ -5,9 +5,20 @@ card:0
 size:[512,342]
 name:"text-based-adventure.deck"
 
-{card:home}
+{card:inventory}
 {widgets}
-inv:{"type":"grid","size":[100,50],"pos":[11,35],"format":"sb","value":{"item":["gun"],"own":[1]}}
+inv:{"type":"grid","size":[100,50],"pos":[11,35],"format":"sb","value":{"item":["gun"],"own":[0]}}
+
+{card:title}
+{widgets}
+title:{"type":"field","size":[100,20],"pos":[193,27],"font":"menu","border":0,"align":"center","value":"Game Title"}
+start:{"type":"button","size":[91,27],"pos":[90,260],"script":"title.0","text":"new game"}
+
+{script:title.0}
+on click do
+ update own:"false" from inv
+end
+{end}
 
 </script>
 <a id='target' style='display:none'></a>
