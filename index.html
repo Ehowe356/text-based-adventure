@@ -1,13 +1,9 @@
 <body><script language="decker">
 {deck}
 version:1
-card:0
+card:1
 size:[512,342]
 name:"text-based-adventure.deck"
-
-{card:inventory}
-{widgets}
-inv:{"type":"grid","size":[100,50],"pos":[11,35],"format":"sb","value":{"item":["gun"],"own":[0]}}
 
 {card:title}
 {widgets}
@@ -23,6 +19,17 @@ end
 {card:card1}
 {widgets}
 field1:{"type":"field","size":[161,36],"pos":[173,93],"value":"You find yourself waking up. A sharp pain pierces your head. you try to move but you are tied up  "}
+
+{card:inventory}
+script:"inventory.0"
+{widgets}
+inv:{"type":"grid","size":[100,50],"pos":[11,35],"format":"sb","value":{"item":["gun"],"own":[0]}}
+
+{script:inventory.0}
+on view do
+ 
+end
+{end}
 
 </script>
 <a id='target' style='display:none'></a>
